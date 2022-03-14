@@ -1,17 +1,31 @@
-char a, b;
+#include <stdio.h>
 
-a = 'a';
-b = 'A';
+/**
+ * main - alphABET
+ *
+ * Return: Always 0 (Success)
+ *
+ */
+int main(void)
+{
+	char ch, ca;
 
-while (a <= 'z')
-{
-	putchar(a);
-	a++;
+	ch = 'a';
+	ca = 'A';
+
+	while (ch <= 'z')
+	{
+		putchar(ch);
+		ch++;
+	}
+
+	while (ca <= 'Z')
+	{
+		putcha(ca);
+		ca++;
+	}
+
+	putchar('\n');
+
+	return (0);
 }
-while (b <= 'Z')
-{
-	putchar(b);
-	b++;
-}
-putchar('\n');
-return (0);
