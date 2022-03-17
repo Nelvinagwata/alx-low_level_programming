@@ -1,6 +1,4 @@
 #include <stdio.h>
-#include <time.h>
-#include <stdlib.h>
 /**
  * main - main block
  * Description: prints all single digit numbers of base 10
@@ -9,12 +7,12 @@
  */
 int main(void)
 {
-	char c = 'z';
+	int c = 0;
 
-	while (c >= 'a')
+	while (c < 10)
 	{
-		putchar(c);
-		c--;
+		putchar(48 + c);
+		c++;
 	}
 
 	putchar('\n');
