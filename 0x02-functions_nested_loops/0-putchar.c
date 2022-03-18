@@ -8,7 +8,7 @@
  */
 
 int main(void)
-/\s\+$//e
+{
 	char s[9] = "_putchar";
 	int i = 0;
 
