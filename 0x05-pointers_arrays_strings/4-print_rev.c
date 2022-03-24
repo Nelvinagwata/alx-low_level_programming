@@ -1,26 +1,27 @@
 #include "main.h"
-
 /**
-  * print_rev - prints string
-  * @s: input string
-  * Return: no return
+ * print_rev - function that prints a string, in reverse,
+ * followed by a new line
+ *
+ * @str: in reverse.
  */
 
-void print_rev(char *s)
+void print_rev(char *str)
 {
-	int count = 0;
+	int i = 0;
+	int total_caracteres = 0;
+	int c = 0;
 
-	while (*s != '\0')
+	while (str[i] != 0)
 	{
-		s++;
-		count++;
+		i++;
+	}
+	total_caracteres = i - 1;
+
+	for (c = 0; c <= total_caracteres; c++)
+	{
+		_putchar(str[total_caracteres - c]);
 	}
 
-	while (count > 0)
-	{
-		s--;
-		_putchar(*s);
-		count--;
-	}
 	_putchar('\n');
 }
